@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>The Go Gazette</title>
+</head>
+<body>
+<h1>The Go Gazette</h1>
+<i>Only the finest go news!</i>
+
+{{range .}}
+    <div>
+        <a href="{{.Link}}">
+            <h1>{{.Title}}</h1>
+        </a>
+    </div>
+{{end}}
+</body>
+</html>
